@@ -217,7 +217,12 @@ export default function (pi: ExtensionAPI) {
     await resolveApiKey(ctx.modelRegistry);
     revalidateModels(cachedApiKey, embeddedModels).then((freshBase) => {
       if (freshBase) {
-        pi.registerProvider("omlx", { models: applyPatch(freshBase, patchData as PatchData) });
+        pi.registerProvider("omlx", {
+          baseUrl: BASE_URL,
+          apiKey: "OMLX_API_KEY",
+          api: "openai-completions",
+          models: applyPatch(freshBase, patchData as PatchData),
+        });
       }
     });
   });
