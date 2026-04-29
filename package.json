@@ -1,0 +1,32 @@
+{
+  "name": "pi-omlx-provider",
+  "version": "1.0.0",
+  "description": "OMLX provider extension for pi - Access self-hosted Qwen models through a local MLX/OpenAI-compatible server",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "echo 'nothing to clean'",
+    "build": "echo 'nothing to build'",
+    "check": "echo 'nothing to check'",
+    "update-models": "node scripts/update-models.js"
+  },
+  "keywords": [
+    "pi",
+    "extension",
+    "provider",
+    "omlx",
+    "mlx",
+    "self-hosted",
+    "local",
+    "ai",
+    "llm",
+    "qwen"
+  ],
+  "author": "",
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
