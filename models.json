@@ -1,8 +1,8 @@
 [
   {
-    "id": "Qwen3.6-27B-4bit",
-    "name": "Qwen 3.6 27B (4-bit)",
-    "reasoning": true,
+    "id": "Nemotron-Cascade-2-30B-A3B-4bit",
+    "name": "Nemotron-Cascade-2-30B-A3B-4bit",
+    "reasoning": false,
     "input": [
       "text"
     ],
@@ -16,15 +16,14 @@
     "maxTokens": 32768,
     "compat": {
       "maxTokensField": "max_completion_tokens",
-      "thinkingFormat": "qwen-chat-template",
       "supportsDeveloperRole": false,
       "supportsStore": false
     }
   },
   {
     "id": "Qwen3.6-35B-A3B-4bit",
-    "name": "Qwen 3.6 35B A3B (4-bit)",
-    "reasoning": true,
+    "name": "Qwen3.6-35B-A3B-4bit",
+    "reasoning": false,
     "input": [
       "text"
     ],
