@@ -10,6 +10,13 @@
  *   OMLX_API_KEY=your-key node scripts/update-models.js
  */
 
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const MODELS_JSON_PATH = path.join(__dirname, "..", "models.json");
+
 const OMLX_BASE_URL = "http://toms-mac-mini.taild0936.ts.net:8000/v1";
 
 async function fetchModels() {
@@ -35,8 +42,6 @@ async function fetchModels() {
 }
 
 function generateModels(modelsFromApi) {
-  const now = new Date().toISOString();
-
   const models = modelsFromApi.map((model) => ({
     id: model.id,
     name: model.id,
@@ -58,7 +63,7 @@ function generateModels(modelsFromApi) {
     },
   }));
 
-  return JSON.stringify(models, null, 2);
+  return models;
 }
 
 async function main() {
@@ -67,7 +72,8 @@ async function main() {
   console.log(`Found ${models.length} model(s)`);
 
   const output = generateModels(models);
-  console.log(output);
+  fs.writeFileSync(MODELS_JSON_PATH, JSON.stringify(output, null, 2) + "\n");
+  console.log(`✓ Saved ${output.length} models to models.json`);
 }
 
 main().catch((err) => {
