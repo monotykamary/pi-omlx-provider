@@ -5,7 +5,8 @@
       "maxTokensField": "max_completion_tokens",
       "thinkingFormat": "qwen-chat-template",
       "supportsDeveloperRole": false,
-      "supportsStore": false
+      "supportsStore": false,
+      "supportsReasoningEffort": true
     }
   },
   "Qwen3.6-35B-A3B-4bit": {
@@ -14,7 +15,8 @@
       "maxTokensField": "max_completion_tokens",
       "thinkingFormat": "qwen-chat-template",
       "supportsDeveloperRole": false,
-      "supportsStore": false
+      "supportsStore": false,
+      "supportsReasoningEffort": true
     }
   }
 }
