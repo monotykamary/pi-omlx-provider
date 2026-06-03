@@ -1,6 +1,17 @@
-# pi-omlx-provider
+<div align="center">
 
-OMLX provider extension for **pi** — access self-hosted Qwen models through a local MLX/OpenAI-compatible server.
+# 🍎 pi-omlx-provider
+
+**Local Qwen models via MLX on [Apple Silicon](https://developer.apple.com/metal/)**
+
+_Qwen3.6-27B, Qwen3.6-35B — self-hosted over Tailscale for [pi](https://github.com/earendil-works/pi-coding-agent)._
+
+[![pi extension](https://img.shields.io/badge/pi-extension-blueviolet)](https://github.com/earendil-works/pi-coding-agent)
+[![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+
+</div>
+
+---
 
 ## Models
 
