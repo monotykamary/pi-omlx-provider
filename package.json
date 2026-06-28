@@ -1,6 +1,6 @@
 {
   "name": "pi-omlx-provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OMLX provider extension for pi - Access self-hosted Qwen models through a local MLX/OpenAI-compatible server",
   "type": "module",
   "main": "index.ts",
