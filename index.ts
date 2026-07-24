@@ -43,7 +43,7 @@ interface JsonModel {
   id: string;
   name: string;
   reasoning: boolean;
-  input: string[];
+  input: ("text" | "image")[];
   cost: {
     input: number;
     output: number;
@@ -64,7 +64,7 @@ interface JsonModel {
 interface PatchEntry {
   name?: string;
   reasoning?: boolean;
-  input?: string[];
+  input?: ("text" | "image")[];
   cost?: {
     input?: number;
     output?: number;
